@@ -13,7 +13,7 @@
 #' @examples
 #' cntSenti(docs = docs, positive=positive, negative=negative, t=0, sigmoid=FALSE, t.s=0.3)
 
-easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3)
+easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3, t.s2=0.1)
 {
   library(RHINO)
   initRhino()   
@@ -61,7 +61,7 @@ easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3)
     result.sum <- round(result.sum, digits = 3)
     if(result.sum > t.s){
       result <- "POSITIVE"
-    }else if(result.sum < -t.s){
+    }else if(result.sum < t.s2){
       result <- "NEGATIVE"
     }else{
       result <- "NEUTRAL"
