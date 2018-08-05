@@ -27,5 +27,5 @@ result vector.
 Calculation of sentiment value of documents
 }
 \examples{
-cntSenti(docs = docs, positive=positive, negative=negative, t=0, sigmoid=FALSE, t.s=0.3)
+cntSenti(docs = docs, positive=positive, negative=negative, t=0, sigmoid=FALSE, t.s=0.3, t.s2=0.1)
 }
