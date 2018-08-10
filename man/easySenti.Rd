@@ -16,7 +16,7 @@ easySenti(docs, positive, negative, t = 0, sigmoid = FALSE, t.s = 0.3,
 
 \item{sigmoid}{logic. use or not of sigmoid function}
 
-\item{t.s}{numeric. threshold to be positive(and -negative). sigmoid of positive - sigmoid of negative}
+\item{t.s}{numeric. threshold to be positive(and -negative). sigmoid of (positive - negative)}
 
 \item{doc}{vector. documents to read}
 }

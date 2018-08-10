@@ -7,7 +7,7 @@
 #' @param negative vector. negative words
 #' @param t numeric. threshold to be positive(and -negative). count of positive - count of negative
 #' @param sigmoid logic. use or not of sigmoid function
-#' @param t.s numeric. threshold to be positive(and -negative). sigmoid of positive - sigmoid of negative
+#' @param t.s numeric. threshold to be positive(and -negative). sigmoid of (positive - negative)
 #' @return result vector.
 #' @export
 #' @examples
@@ -54,7 +54,7 @@ easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3, t.s
       }
     }
   }else{                                        # sigmoid = TRUE 인 경우
-    result.sum <- sigmoid(pos.sum) - sigmoid(neg.sum)
+    result.sum <- sigmoid(pos.sum - neg.sum)
     print(paste("[1] number of positive words", pos.sum))
     print(paste("[2] number of negative words", neg.sum))
     print(paste("value by Sigmoid function:", result.sum))
