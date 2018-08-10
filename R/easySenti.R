@@ -47,7 +47,7 @@ easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3, t.s
     }else if(result.sum == 0){
       result <- "NEUTRAL"
     }else{
-      if(result.sum < t){
+      if(result.sum < -t){
         result <- "NEGATIVE"
       }else{
         result <- "NEUTRAL"
