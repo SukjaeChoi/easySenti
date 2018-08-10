@@ -7,8 +7,8 @@
 #' @param negative vector. negative words
 #' @param t numeric. threshold to be positive(and -negative). count of positive - count of negative
 #' @param sigmoid logic. use or not of sigmoid function
-#' @param t.s numeric. threshold to be positive. sigmoid of (positive - negative)
-#' @param t.s2 numeric. threshold to be negative. sigmoid of (positive - negative)
+#' @param t.s numeric. minimum threshold to be positive. sigmoid of (positive - negative)
+#' @param t.s2 numeric. maximum threshold to be negative. sigmoid of (positive - negative)
 #' @return result vector.
 #' @export
 #' @examples
