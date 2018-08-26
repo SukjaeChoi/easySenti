@@ -4,8 +4,8 @@
 \alias{easySenti}
 \title{easySenti}
 \usage{
-easySenti(docs, positive, negative, t = 0, sigmoid = FALSE, t.s = 0.3,
-  t.s2 = 0.1)
+easySenti(docs, positive, negative, t = 0, sigmoid = FALSE,
+  t.s = 0.3, t.s2 = 0.1)
 }
 \arguments{
 \item{positive}{vector. postive words}

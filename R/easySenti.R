@@ -17,9 +17,9 @@
 easySenti <- function(docs, positive, negative, t=0, sigmoid=FALSE, t.s=0.3, t.s2=0.1)
 {
   library(RHINO)
-  initRhino()
+  #initRhino()
 
-  POS <- lapply(docs, getMorph, "ALL")  	        # 형태소 분석
+  POS <- lapply(docs, getMorph, "ALL")  	      # 형태소 분석
 
   POS.vec <- unlist(POS)                        #벡터 타입으로 변환
   pos.matches.num <- match(POS.vec, positive)   #긍정어 벡터 번호
